@@ -37,6 +37,7 @@ const Contact = () => {
       }
     } catch (err) {
       setError("Failed to send message. Try again later.");
+      console.log(process.env.NEXT_PUBLIC_API_BASE_URL);
     } finally {
       setLoading(false);
     }
