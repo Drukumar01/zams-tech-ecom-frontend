@@ -26,7 +26,7 @@ const Contact = () => {
 
     try {
       const response = await axios.post(
-        `${process.env.NEXT_PUBLIC_API_BASE_URL}/contact`, // Base URL env me move kiya
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/contact`, // Base URL env me move kiya
         formData,
         { headers: { "Content-Type": "application/json" } }
       );
